@@ -1,42 +1,29 @@
 ## Lectura de datos y creación de modelos de ML
 
-# E1: Lectura y escritura de csv
+### E1: Lectura y escritura de CSV
 
-- A. Lee el fichero de [airport.csv](https://github.com/tidyverse/nycflights13/blob/main/data-raw/airports.csv) a partir de una ruta relativa o absoluta.
-
-- B. Exporta ese fichero en diferentes formatos (json, excel).
-
+- A. Lee el fichero [airports.csv](https://raw.githubusercontent.com/tidyverse/nycflights13/main/data-raw/airports.csv) a partir de una ruta relativa o absoluta (descárgalo primero si hace falta).
+- B. Exporta ese fichero en diferentes formatos (JSON, Excel).
 - C. Crea una función que pueda leer cualquiera de los tres formatos indicándole, al menos, la ruta del fichero.
 
-# E2: Carga de fichero con variable categórica y crear modelo de clasificación
+### E2: Clasificación con variable categórica
 
-- A. Descarga de la librería sklearn el fichero de datos de load_breast_cancer.
+- A. Carga el dataset `load_breast_cancer` de scikit-learn.
+- B. Pásalo a DataFrame incluyendo el target.
+- C. Entrena un modelo de clasificación (el que prefieras de scikit-learn).
+- D. Evalúa el modelo (accuracy, precision, recall, f1-score y/o matriz de confusión).
 
-- B. Pasa ese fichero a formato dataframe incluyendo el target
+### E3: Regresión con variable numérica
 
-- C. Crea un modelo de clasificación usando la técnica que prefieras dentro de Sklearn.
+- A. Carga el dataset `load_diabetes` de scikit-learn.
+- B. Pásalo a DataFrame.
+- C. Entrena un modelo de regresión.
+- D. Evalúa el modelo (MSE, RMSE, MAE, R²).
 
-- D. Evalúa el modelo.
+### E4: Clusterización
 
-# E3: Carga de fichero con variable numérica y crear modelo de regresión
-
-- A. Descarga el fichero de datos load_diabetes de sklearn.
-
-- B. Pásalo a formato dataframe.
-
-- C. Crea un modelo de regresión usando la técnica que prefieras dentro de Sklearn.
-
-- D. Evalúa el modelo.
-
-# E4: Crear modelos de clusterización
-
-- A. Descarga el fichero de datos Wine Recognition Dataset de sklearn.
-
-- B. Crear varios modelos de clusterización (K-means, NearestNeighbort, DBSCAN, ...).
-
-- C. Evalua los clusters de cada modelo.
-
+- A. Carga el dataset Wine Recognition de scikit-learn.
+- B. Entrena varios modelos de clusterización (**K-Means**, **AgglomerativeClustering**, **DBSCAN**, …).
+- C. Evalúa los clusters (por ejemplo, Silhouette Score).
 - D. Visualiza los clusters de cada modelo.
-
-- E. Crea modelos de clasificación a partir de los clusters.
-
+- E. (Opcional) Entrena un clasificador usando las etiquetas de cluster como target.

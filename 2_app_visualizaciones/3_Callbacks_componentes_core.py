@@ -1,18 +1,16 @@
-# Importamos las librerias mínimas necesarias
-import pandas as pd
-import numpy as np
-import plotly.graph_objects as go
-import dash
-import dash_core_components as dcc
-import dash_html_components as html
-from dash.dependencies import Input, Output, State
+# Importamos las librerías mínimas necesarias
 import logging
+from pathlib import Path
+
+import numpy as np
+import pandas as pd
+import plotly.graph_objects as go
+from dash import Dash, Input, Output, State, dcc, html
 from plotly.subplots import make_subplots
 
-# Para este Dash, vamos a seleccionar un fichero de datos y realizar un dashboard descriptivo
-# sobre un conjunto de datos
-
-df = pd.read_csv("../2_app_visualizaciones/Datos/StudentsPerformance.csv")
+# Dashboard descriptivo sobre el rendimiento de estudiantes
+DATA_PATH = Path(__file__).resolve().parent / "Datos" / "StudentsPerformance.csv"
+df = pd.read_csv(DATA_PATH)
 
 # Crear opciones para las razas
 races = df["race/ethnicity"].unique().tolist()
@@ -35,7 +33,7 @@ options_checklist = []
 for col in cols_checklist:
     options_checklist.append({'value': col, 'label': col})
 
-app = dash.Dash()
+app = Dash(__name__)
 
 #app.config.suppress_callback_exceptions = True
 
@@ -349,5 +347,5 @@ def checklist_callback(n_clicks,checklist_value):
         return (fig,{"display": "block"})
         
 
-if __name__ == '__main__':
-    app.run_server()
+if __name__ == "__main__":
+    app.run(debug=True)

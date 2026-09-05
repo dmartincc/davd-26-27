@@ -1,30 +1,31 @@
 ## Ejercicios de estructuras, funciones y clases
 
-# E1: Itera sobre una lista
+### E1: Itera sobre una lista
 
-Crea una lista con las fechas y horas de clase desde hoy (13 de septiembre) hasta la última clase (6 de diciembre), ten en cuenta que los festivos no serán horas de clase.
+Crea una lista con las fechas y horas de clase desde hoy (**14 de septiembre de 2026**) hasta la última clase (**4 de diciembre de 2026**). Ten en cuenta que los festivos no serán horas de clase.
 
-# E2: Crear una función
+> Pista: asume el horario habitual de la asignatura (consulta el calendario académico de ICAI para festivos).
 
-Crea una función para efectuar el producto real de dos matrices.
+### E2: Crear una función
 
-# E3: Definición de clases
+Crea una función para efectuar el producto de dos matrices (producto matricial).
 
-Define una clase de números complejos cuyos métodos sean, al menos, el modulo y el argumento.
+### E3: Definición de clases
 
-# E4: Implementación de operaciones con números complejos
+Define una clase de números complejos cuyos métodos sean, al menos, el módulo y el argumento.
 
-Define en funciones, usando la clase anterior, las operaciones básicas entre números complejos (sumar, restar, multiplicar y dividir). Puede ser conveniente añadir algún método al ejercicio anterior
+### E4: Implementación de operaciones con números complejos
 
-# E5: Blackjack
+Define en funciones, usando la clase anterior, las operaciones básicas entre números complejos (sumar, restar, multiplicar y dividir). Puede ser conveniente añadir algún método al ejercicio anterior.
 
-Immplementa un programa de Blackjack (http://en.wikipedia.org/wiki/Blackjack) basado en texto con Python.
+### E5: Blackjack
 
-Hay un jugador y un crupier. 
+Implementa un programa de Blackjack ([wikipedia](http://en.wikipedia.org/wiki/Blackjack)) basado en texto con Python.
 
-El crupier pide hasta que el valor de su mano sea 17 o más. 
+Hay un jugador y un crupier.
 
-Implementa las acciones básicas de golpear y pararse.
+El crupier pide hasta que el valor de su mano sea 17 o más.
+
+Implementa las acciones básicas de golpear (*hit*) y plantarse (*stand*).
 
 El jugador comienza con 100 fichas y debe apostar al menos 1 ficha en cada mano.
-

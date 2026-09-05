@@ -1,2 +1,5 @@
-Flask==1.1.4
-transformers==4.35.0
+Flask>=3.0
+Flask-RESTful>=0.3.10
+transformers>=4.40
+torch>=2.1
+requests>=2.31

@@ -1,15 +1,13 @@
-# Importamos las librerias mínimas necesarias
+# Importamos las librerías mínimas necesarias
 import numpy as np
 import plotly.graph_objects as go
-import dash
-import dash_core_components as dcc
-import dash_html_components as html
+from dash import Dash, dcc, html
 
 # A la hora de desarrollar una aplicación para visualizar datos tendremos que combinar 
 # elementos de HTML y CSS con elementos propios de Dash. Lo primero que tendremos que 
 # hacer siempre es inicializar una aplicación de Dash
 
-app = dash.Dash()
+app = Dash(__name__)
 
 # Una vez hemos inicializado la aplicacion, modificamos el diseño de la aplicacion
 
@@ -156,6 +154,6 @@ app.layout = html.Div(  # Creamos una componente que realice la primera divisió
     } 
 )
 
-if __name__ == '__main__':
-    app.run_server()
+if __name__ == "__main__":
+    app.run(debug=True)
 

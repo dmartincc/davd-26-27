@@ -28,31 +28,33 @@ Tu_carpeta_de_proyecto/
 
    ```python
    # app.py
-   import dash
-   from dash import html
-   from src import graphics, etl
+   from dash import Dash, html
 
-   app = dash.Dash(__name__)
+   app = Dash(__name__)
+   server = app.server  # obligatorio para gunicorn
+
    app.layout = html.Div(children=[
        html.H1("¡Hola, Render!"),
        html.P("Esta es una aplicación Dash desplegada en Render.")
    ])
 
    if __name__ == "__main__":
-       app.run_server(debug=True)
+       app.run(debug=True)
    ```
 
 2. **`requirements.txt`**: Lista de dependencias necesarias para la aplicación. Render utilizará este archivo para instalar automáticamente los paquetes.
 
    ```text
-   dash
-   gunicorn
+   dash>=2.17
+   plotly>=5.18
+   pandas>=2.0
+   gunicorn>=22.0
    ```
 
-3. **`Procfile`**: Archivo que indica a Render cómo ejecutar la aplicación en producción.
+3. **`Procfile`**: Archivo que indica a Render cómo ejecutar la aplicación en producción. En Dash hay que apuntar al objeto **`server`**, no a `app`.
 
    ```plaintext
-   web: gunicorn app:app
+   web: gunicorn --timeout 600 app:server
    ```
 
 4. **`render.yaml`**: Archivo de configuración que Render usa para automatizar el despliegue de la aplicación.
@@ -60,11 +62,14 @@ Tu_carpeta_de_proyecto/
    ```yaml
    services:
      - type: web
-       name: dash-app
-       env: python
+       name: davd-dash-app
+       runtime: python
        plan: free
        buildCommand: "pip install -r requirements.txt"
-       startCommand: "gunicorn app:app"
+       startCommand: "gunicorn --timeout 600 app:server"
+       envVars:
+         - key: PYTHON_VERSION
+           value: "3.12.0"
    ```
 
 5. **`README.md`**: Documentación del proyecto.
