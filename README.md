@@ -52,9 +52,9 @@ Al finalizar, el alumnado podrá crear **cuadros de mando y aplicaciones** que f
 
 | Elemento | Fecha | Peso |
 | --- | --- | --- |
-| Propuesta / redacción del proyecto | **1 de octubre de 2026** | 10 % |
-| Prueba intertrimestral | **15 de octubre de 2026** | 10 % |
-| Desarrollo de aplicación y presentación | Continua + **26 de noviembre y 3 de diciembre de 2026** | 50 % |
+| Propuesta / redacción del proyecto | **5 de octubre de 2026** | 10 % |
+| Prueba intertrimestral | **19 de octubre de 2026** | 10 % |
+| Desarrollo de aplicación y presentación | Continua + **26 de noviembre y 30 de noviembre de 2026** | 50 % |
 | Examen teórico-práctico | **Diciembre de 2026** | 30 % |
 
 ### Desglose del proyecto de aplicación (50 %)
@@ -71,12 +71,13 @@ La exposición durará **5 minutos**, más **2 minutos** de preguntas.
 
 **Requisito indispensable:** aprobar todas las partes de la evaluación y asistir al menos al **85 %** de las sesiones.
 
-### Entrega de la propuesta (1 de octubre de 2026)
+### Entrega de la propuesta (5 de octubre de 2026)
 
 Documento PDF de **dos páginas** con:
 
 - **Motivación** — relevancia del problema, necesidad cubierta y aportación frente a soluciones existentes.
 - **Visión estratégica** — alcance, usuarios, beneficios y escenarios de uso.
+- **Visión técnica** - origen de los datos, pipeline de procesamiento y modelo de predicción
 - **Repositorio en GitHub** — nombre adecuado y `README.md` con título, descripción, objetivos y plan de trabajo inicial.
 
 ## Entorno de trabajo y recursos

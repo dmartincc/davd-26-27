@@ -234,7 +234,7 @@ python -c "import sys; print(sys.prefix)"
 Comprobación del curso:
 
 ```bash
-python 3_despliegue_apps/0_entornos_y_git/ejemplos/check_entorno.py --strict
+python 2_app_visualizaciones/0_entornos_y_git/ejemplos/check_entorno.py --strict
 ```
 
 Debe imprimir `ENTORNO OK`. Sin `--strict` solo avisa si no detecta `.venv`.
