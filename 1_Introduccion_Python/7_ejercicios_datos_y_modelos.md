@@ -1,5 +1,8 @@
 ## Lectura de datos y creación de modelos de ML
 
+> Para el pipeline de calidad con `ventas.csv` (diagnóstico → validación → KPIs → export), usa [`5_ejercicios_pandas.md`](5_ejercicios_pandas.md).
+
+
 ### E1: Lectura y escritura de CSV
 
 - A. Lee el fichero [airports.csv](https://raw.githubusercontent.com/tidyverse/nycflights13/main/data-raw/airports.csv) a partir de una ruta relativa o absoluta (descárgalo primero si hace falta).
