@@ -1,6 +1,6 @@
 ## Lectura de datos y creación de modelos de ML
 
-> Para el pipeline de calidad con `ventas.csv` (diagnóstico → validación → KPIs → export), usa [`5_ejercicios_pandas.md`](5_ejercicios_pandas.md).
+> Para el pipeline de calidad con `ventas.csv` y el dataset abierto `penguins.csv`, usa [`5_ejercicios_pandas.md`](5_ejercicios_pandas.md).
 
 
 ### E1: Lectura y escritura de CSV
