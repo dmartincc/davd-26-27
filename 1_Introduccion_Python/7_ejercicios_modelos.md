@@ -53,3 +53,7 @@ A. Genera **100.000** individuos.
 B. Agrupa BMIs y explora la relación con: bajo peso (< 18.5), normal (18.5–24.9), sobrepeso (25–29.9), obesidad (≥ 30).  
 C. Entrena un modelo de **regresión** para estimar el BMI.  
 D. Entrena un modelo de **clasificación** que indique si una persona tiene sobrepeso o no (BMI ≥ 25).
+
+### Continuación — visualización
+
+Cuando tengas el dataset sintético, practica gráficos en [`8_ejercicios_visualizaciones.md`](8_ejercicios_visualizaciones.md) (histograma, barras, scatter, boxplot y mini-dashboard 2×2) con apoyo de [`8_visualizaciones_sencillas.ipynb`](8_visualizaciones_sencillas.ipynb).
