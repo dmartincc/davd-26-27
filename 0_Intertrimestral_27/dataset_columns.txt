@@ -1,0 +1,30 @@
+# Dataset: city_micromobility_hourly.csv
+
+Alquiler horario de bicicletas y patinetes compartidos en una ciudad (datos sintéticos pero realistas), enero 2025 – diciembre 2026.
+
+| Columna | Descripción |
+| --- | --- |
+| datetime | Marca temporal de la hora (inicio del intervalo) |
+| year, month, day, hour | Componentes de fecha/hora |
+| weekday | Día de la semana (0 = lunes … 6 = domingo) |
+| season | Estación: Winter, Spring, Summer, Autumn |
+| is_holiday | 1 si es festivo, 0 en caso contrario |
+| is_weekend | 1 si sábado o domingo |
+| is_workingday | 1 si es día laborable (no fin de semana ni festivo) |
+| weather | Clear, Cloudy, Drizzle, Rain |
+| temp_c | Temperatura media en °C |
+| humidity | Humedad relativa (%) |
+| wind_kmh | Velocidad del viento (km/h) |
+| precip_mm | Precipitación acumulada en la hora (mm) |
+| casual_users | Alquileres de usuarios ocasionales |
+| member_users | Alquileres de usuarios con abono |
+| total_rentals | Total de alquileres en la hora (objetivo típico de regresión) |
+| avg_trip_min | Duración media del viaje (minutos) |
+| avg_distance_km | Distancia media del viaje (km) |
+| electric_share | Proporción de vehículos eléctricos (0–1) |
+| revenue_eur | Ingresos estimados de la hora (€) |
+| high_demand | 1 si la demanda está en el tercio alto del histórico, 0 si no |
+
+Notas:
+- Algunas columnas numéricas pueden contener valores nulos.
+- `high_demand` se puede usar directamente para clasificación binaria.
